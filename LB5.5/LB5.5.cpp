@@ -1,10 +1,10 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <locale>
 #include "windows.h"
 
 using namespace std;
 
-// Функція для обчислення суми цифр числа
+// Р¤СѓРЅРєС†С–СЏ РґР»СЏ РѕР±С‡РёСЃР»РµРЅРЅСЏ СЃСѓРјРё С†РёС„СЂ С‡РёСЃР»Р°
 int sumOfDigits(int n) {
     if (n == 0) {
         return 0;
@@ -14,7 +14,7 @@ int sumOfDigits(int n) {
     }
 }
 
-// Функція для обчислення кількості цифр у числі
+// Р¤СѓРЅРєС†С–СЏ РґР»СЏ РѕР±С‡РёСЃР»РµРЅРЅСЏ РєС–Р»СЊРєРѕСЃС‚С– С†РёС„СЂ Сѓ С‡РёСЃР»С–
 int countDigits(int n) {
     if (n == 0) {
         return 0;
@@ -24,7 +24,7 @@ int countDigits(int n) {
     }
 }
 
-// Функція для знаходження максимальної цифри
+// Р¤СѓРЅРєС†С–СЏ РґР»СЏ Р·РЅР°С…РѕРґР¶РµРЅРЅСЏ РјР°РєСЃРёРјР°Р»СЊРЅРѕС— С†РёС„СЂРё
 int findMaxDigit(int n) {
     if (n < 10) {
         return n;
@@ -36,7 +36,7 @@ int findMaxDigit(int n) {
     }
 }
 
-// Функція для знаходження мінімальної цифри
+// Р¤СѓРЅРєС†С–СЏ РґР»СЏ Р·РЅР°С…РѕРґР¶РµРЅРЅСЏ РјС–РЅС–РјР°Р»СЊРЅРѕС— С†РёС„СЂРё
 int findMinDigit(int n) {
     if (n < 10) {
         return n;
@@ -53,7 +53,7 @@ int main() {
     SetConsoleOutputCP(1251);
 
     int num;
-    cout << "Введіть ціле число: ";
+    cout << "Р’РІРµРґС–С‚СЊ С†С–Р»Рµ С‡РёСЃР»Рѕ: ";
     cin >> num;
 
     int sum = sumOfDigits(num);
@@ -61,10 +61,10 @@ int main() {
     int maxDigit = findMaxDigit(num);
     int minDigit = findMinDigit(num);
 
-    cout << "Сума цифр: " << sum << endl;
-    cout << "Кількість цифр: " << numDigits << endl;
-    cout << "Максимальна цифра: " << maxDigit << endl;
-    cout << "Мінімальна цифра: " << minDigit << endl;
+    cout << "РЎСѓРјР° С†РёС„СЂ: " << sum << endl;
+    cout << "РљС–Р»СЊРєС–СЃС‚СЊ С†РёС„СЂ: " << numDigits << endl;
+    cout << "РњР°РєСЃРёРјР°Р»СЊРЅР° С†РёС„СЂР°: " << maxDigit << endl;
+    cout << "РњС–РЅС–РјР°Р»СЊРЅР° С†РёС„СЂР°: " << minDigit << endl;
 
     return 0;
 }
